@@ -1401,7 +1401,7 @@ Show # %H5 $type->waystones $tier->waystones_b_t13
 	# MinimapIcon 2 White Square
 
 Hide # $type->waystones $tier->lowtier
-	WaystoneTier <= 12
+	WaystoneTier <= 11
 	Class == "Waystones"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
@@ -1637,7 +1637,7 @@ Show # %D8 $type->currency->stackedsix $tier->t2
 	MinimapIcon 0 Red Circle
 
 Show # $type->currency->stacked $tier->t3
-	StackSize >= 2
+	StackSize >= 1
 	Class == "Stackable Currency"
 	BaseType == "Glassblower's Bauble" "Orb of Alchemy" "Artificer's Orb" "Arcanist's Etcher" "Lesser Jeweller's Orb" "Black Scythe Artifact" "Sun Artifact" "Vaal Orb" "Regal Orb" "Armourer's Scrap" "Blacksmith's Whetstone" "Chance Shard" "Distilled Paranoia" "Distilled Envy" "Distilled Greed" "Neural Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Essence of Torment" "Essence of Haste" "Essence of Electricity" "Essence of Battle" "Essence of Sorcery" "Essence of Ruin"
 	SetFontSize 45
@@ -1726,7 +1726,7 @@ Show # %HS4 $type->currency $tier->t5glassblower
 	PlayEffect White
 	MinimapIcon 2 White Circle
 
-Hide # %HS3 $type->currency $tier->t6artificer
+Show # %HS3 $type->currency $tier->t6artificer
 	Class == "Stackable Currency"
 	BaseType == "Artificer's Orb" "Regal Orb" "Black Scythe Artifact" "Sun Artifact" "Arcanist's Etcher" "Broken Circle Artifact"
 	SetFontSize 45
@@ -1736,7 +1736,7 @@ Hide # %HS3 $type->currency $tier->t6artificer
 	PlayEffect Grey
 	MinimapIcon 2 Grey Circle
 
-Hide # %HS2 $type->currency $tier->t7whetstone
+Show # %HS2 $type->currency $tier->t7whetstone
 	Class == "Stackable Currency"
 	BaseType == "Lesser Jeweller's Orb" "Blacksmith's Whetstone" "Order Artifact"
 	SetFontSize 40
@@ -1745,7 +1745,7 @@ Hide # %HS2 $type->currency $tier->t7whetstone
 	SetBackgroundColor 210 178 135 255
 	MinimapIcon 2 Grey Circle
 
-Hide # %H2 $type->currency $tier->t8shard
+Show # %H2 $type->currency $tier->t8shard
 	Class == "Stackable Currency"
 	BaseType == "Artificer's Shard" "Regal Shard"
 	SetFontSize 35
@@ -1754,7 +1754,7 @@ Hide # %H2 $type->currency $tier->t8shard
 	SetBackgroundColor 20 20 0 255
 	DisableDropSound True
 
-Hide # %H1 $type->currency $tier->t9transmutation
+Show # %H1 $type->currency $tier->t9transmutation
 	Class == "Stackable Currency"
 	BaseType ==  "Orb of Augmentation" "Orb of Transmutation"
 	SetFontSize 35
@@ -1822,7 +1822,7 @@ Show # $type->currency->distilled $tier->t2
 	# PlayEffect White
 	# MinimapIcon 2 White Circle
 
-Hide # %HS3 $type->currency->distilled $tier->t5
+Show # %HS3 $type->currency->distilled $tier->t5
 	Class == "Stackable Currency"
 	BaseType == "Distilled Paranoia" "Distilled Envy"
 	SetFontSize 45
@@ -1844,7 +1844,7 @@ Hide # %HS3 $type->currency->distilled $tier->t5
 	# PlayEffect Grey
 	# MinimapIcon 2 Grey Circle
 
-Hide # %HS2 $type->currency->distilled $tier->t7
+Show # %HS2 $type->currency->distilled $tier->t7
 	Class == "Stackable Currency"
 	BaseType == "Distilled Greed"
 	SetFontSize 45
@@ -1853,7 +1853,7 @@ Hide # %HS2 $type->currency->distilled $tier->t7
 	SetBackgroundColor 210 178 135 255
 	MinimapIcon 2 Grey Circle
 
-Hide # %H2 $type->currency->distilled $tier->t8
+Show # %H2 $type->currency->distilled $tier->t8
 	Class == "Stackable Currency"
 	BaseType == "Distilled Ire" "Distilled Guilt"
 	SetFontSize 45
@@ -1972,7 +1972,7 @@ Show # %HS3 $type->currency->catalyst $tier->t5
 	# PlayEffect Grey
 	# MinimapIcon 2 Grey Circle
 
-Hide # %HS2 $type->currency->catalyst $tier->t7
+Show # %HS2 $type->currency->catalyst $tier->t7
 	Class == "Stackable Currency"
 	BaseType == "Flesh Catalyst" "Carapace Catalyst" "Adaptive Catalyst" "Sibilant Catalyst" "Skittering Catalyst"
 	SetFontSize 45
@@ -1981,7 +1981,7 @@ Hide # %HS2 $type->currency->catalyst $tier->t7
 	SetBackgroundColor 210 178 135 255
 	MinimapIcon 2 Grey Circle
 
-Hide # %H2 $type->currency->catalyst $tier->t8
+Show # %H2 $type->currency->catalyst $tier->t8
 	Class == "Stackable Currency"
 	BaseType == "Uul-Netol's Catalyst"
 	SetFontSize 45
@@ -2063,7 +2063,7 @@ Show # %HS3 $type->currency->catalyst $tier->t5
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 210 178 135 255
 
-Hide # %HS3 $type->currency->catalyst $tier->t6
+Show # %HS3 $type->currency->catalyst $tier->t6
 	Class == "Stackable Currency"
 	BaseType == "Essence of Enhancement" "Essence of Flames" "Essence of Ice"
 	SetFontSize 45
@@ -2074,7 +2074,7 @@ Hide # %HS3 $type->currency->catalyst $tier->t6
 	PlayEffect Grey
 	MinimapIcon 2 Grey Circle
 
-Hide # %HS2 $type->currency->catalyst $tier->t7
+Show # %HS2 $type->currency->catalyst $tier->t7
 	Class == "Stackable Currency"
 	BaseType == "Essence of the Body" "Essence of the Mind" "Essence of the Infinite" 
 	SetFontSize 45
