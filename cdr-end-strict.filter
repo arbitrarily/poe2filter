@@ -1461,7 +1461,7 @@ Show # Trial Coins special
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 	
-Show # Djinn Barya 4 trials (4th ascension)
+Hide # Djinn Barya 4 trials (4th ascension)
 	Class == "Trial Coins"
 	BaseType == "Djinn Barya"
 	ItemLevel >= 75
@@ -1470,9 +1470,9 @@ Show # Djinn Barya 4 trials (4th ascension)
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 249 150 25 255
 	PlayEffect Yellow
-	MinimapIcon 2 Yellow Circle
+	MinimapIcon 2 White Circle
 	
-Show # Djinn Barya any
+Hide # Djinn Barya any
 	Class == "Trial Coins"
 	BaseType == "Djinn Barya"
 	SetFontSize 45
@@ -1483,7 +1483,7 @@ Show # Djinn Barya any
 	PlayEffect Grey
 	MinimapIcon 2 Grey Circle
 	
-Show # Inscribed Ultimatum 10 trials (4th ascension)
+Hide # Inscribed Ultimatum 10 trials (4th ascension)
 	Class == "Inscribed Ultimatum"
 	BaseType == "Inscribed Ultimatum"
 	ItemLevel >= 75
@@ -1492,9 +1492,9 @@ Show # Inscribed Ultimatum 10 trials (4th ascension)
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 249 150 25 255
 	PlayEffect Yellow
-	MinimapIcon 2 Yellow Circle
+	MinimapIcon 2 White Circle
 	
-Show # Inscribed Ultimatum any
+Hide # Inscribed Ultimatum any
 	Class == "Inscribed Ultimatum"
 	BaseType == "Inscribed Ultimatum"
 	SetFontSize 45
@@ -2243,6 +2243,7 @@ Show # %HS3 $type->currency->splinter $tier->t2
 	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 65 20 80
+	MinimapIcon 1 Purple Kite
 	
 #===============================================================================================================
 # [[4000]] Remaining Currency
