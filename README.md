@@ -4,9 +4,7 @@ https://ko-fi.com/cdrkf => My ko-fi, like patreon
 
 I'm using `end-strict`. 
 
-![image](https://github.com/user-attachments/assets/d4eff266-f616-4829-9759-b9a7d220ea01)
-
-![image](https://github.com/user-attachments/assets/19c14f83-2651-4acd-a010-7e0cb261fe6a)
+![image](https://github.com/user-attachments/assets/7a25d5bb-7752-468f-b331-278069048f8b)
 
 Currently two: 
 
