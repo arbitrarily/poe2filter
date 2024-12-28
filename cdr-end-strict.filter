@@ -50,7 +50,7 @@
 
 Show
 	BaseType == "Gold"
-	StackSize >= 1000
+	StackSize >= 5000
 	SetFontSize 45
 	SetTextColor 235 200 110
 	SetBorderColor 255 255 255
@@ -1483,7 +1483,7 @@ Hide # Djinn Barya any
 	PlayEffect Grey
 	MinimapIcon 2 Grey Circle
 	
-Hide # Inscribed Ultimatum 10 trials (4th ascension)
+Show # Inscribed Ultimatum 10 trials (4th ascension)
 	Class == "Inscribed Ultimatum"
 	BaseType == "Inscribed Ultimatum"
 	ItemLevel >= 75
@@ -2063,7 +2063,7 @@ Show # %HS3 $type->currency->catalyst $tier->t5
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 210 178 135 255
 
-Hide # %HS3 $type->currency->catalyst $tier->t6
+Show # %HS3 $type->currency->catalyst $tier->t6
 	Class == "Stackable Currency"
 	BaseType == "Essence of Enhancement" "Essence of Flames" "Essence of Ice"
 	SetFontSize 45
@@ -2074,7 +2074,7 @@ Hide # %HS3 $type->currency->catalyst $tier->t6
 	PlayEffect Grey
 	MinimapIcon 2 Grey Circle
 
-Hide # %HS2 $type->currency->catalyst $tier->t7
+Show # %HS2 $type->currency->catalyst $tier->t7
 	Class == "Stackable Currency"
 	BaseType == "Essence of the Body" "Essence of the Mind" "Essence of the Infinite" 
 	SetFontSize 45
