@@ -1124,6 +1124,7 @@ Show # $type->Waystones $tier->deco_waystoneup_t15
 Show # $type->Waystones $tier->deco_waystoneup_t14
 	WaystoneTier >= 14
 	Class == "Waystones"
+	/hideout
 	AreaLevel < 78
 	SetBorderColor 220 50 0 255
 	Continue
@@ -1259,15 +1260,15 @@ Show # $type->waystones $tier->waystones_a_t14
 	PlayEffect Yellow
 	MinimapIcon 1 Red Square
 
-Show # %H5 $type->waystones $tier->waystones_b_t13
-	WaystoneTier 13
-	Class == "Waystones"
-	SetFontSize 45
-	SetTextColor 0 0 0 255
-	SetBackgroundColor 200 200 200 255
-	PlayAlertSound 5 300
-	PlayEffect Yellow
-	MinimapIcon 1 Red Square
+# Show # %H5 $type->waystones $tier->waystones_b_t13
+	# WaystoneTier 13
+	# Class == "Waystones"
+	# SetFontSize 45
+	# SetTextColor 0 0 0 255
+	# SetBackgroundColor 200 200 200 255
+	# PlayAlertSound 5 300
+	# PlayEffect Yellow
+	# MinimapIcon 1 Red Square
 
 # Show # %H5 $type->waystones $tier->waystones_b_t12
 	# WaystoneTier 12
@@ -1401,7 +1402,7 @@ Show # %H5 $type->waystones $tier->waystones_b_t13
 	# MinimapIcon 2 White Square
 
 Hide # $type->waystones $tier->lowtier
-	WaystoneTier <= 12
+	WaystoneTier <= 13
 	Class == "Waystones"
 	SetFontSize 40
 	SetTextColor 255 255 255 255
@@ -2240,7 +2241,7 @@ Show # %DS4 $type->currency->stackedsplintershigh $tier->2
 Show # %HS3 $type->currency->splinter $tier->t2
 	Class == "Stackable Currency"
 	BaseType == "Breach Splinter" "Simulacrum Splinter"
-	SetFontSize 35
+	SetFontSize 40
 	SetTextColor 255 255 255 255
 	SetBackgroundColor 65 20 80
 	MinimapIcon 1 Purple Kite
