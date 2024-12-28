@@ -1124,7 +1124,6 @@ Show # $type->Waystones $tier->deco_waystoneup_t15
 Show # $type->Waystones $tier->deco_waystoneup_t14
 	WaystoneTier >= 14
 	Class == "Waystones"
-	/hideout
 	AreaLevel < 78
 	SetBorderColor 220 50 0 255
 	Continue
