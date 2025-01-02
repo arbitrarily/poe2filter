@@ -58,7 +58,7 @@ Show
 	SetTextColor 235 200 110
 	SetBorderColor 255 255 255
 
-Show
+Hide
 	BaseType == "Gold"
 	StackSize >= 1000
 	SetFontSize 35
