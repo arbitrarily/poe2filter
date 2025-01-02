@@ -53,7 +53,7 @@
 
 Show
 	BaseType == "Gold"
-	StackSize >= 3000
+	StackSize >= 4000
 	SetFontSize 45
 	SetTextColor 235 200 110
 	SetBorderColor 255 255 255
@@ -93,7 +93,7 @@ Hide
 
 Hide # hide small piles
 	BaseType == "Gold"
-	StackSize <= 499
+	StackSize < 4000
 
 #===============================================================================================================
 # [[0500]] Exotic Bases
