@@ -150,7 +150,7 @@ Show
 # 	Class == "Relics"
 # 	BaseType == "Urn Relic" "Amphora Relic" "Vase Relic" "Seal Relic" "Coffer Relic" "Tapestry Relic" "Incense Relic"
 # 	Rarity <= Magic
-# 	SetFontSize 18
+# 	SetFontSize 1
 # 	SetTextColor 0 0 0 0
 # 	SetBorderColor 0 0 0 0
 # 	SetBackgroundColor 0 0 0 0
