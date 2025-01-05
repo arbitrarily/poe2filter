@@ -54,7 +54,7 @@
 Show
 	BaseType == "Gold"
 	StackSize >= 4000
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 235 200 110
 	SetBorderColor 255 255 255
 
@@ -1888,7 +1888,7 @@ Show # $type->currency $tier->t3annul
 	SetBackgroundColor 240 90 35 255
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 1 Yellow Circle
+	MinimapIcon 0 Yellow Circle
 
 Show # $type->currency $tier->t4exalt
 	Class == "Stackable Currency"
@@ -1899,12 +1899,12 @@ Show # $type->currency $tier->t4exalt
 	SetBackgroundColor 249 150 25 255
 	PlayAlertSound 2 300
 	PlayEffect Yellow
-	MinimapIcon 2 Yellow Circle
+	MinimapIcon 1 Yellow Circle
 
 Show # %HS4 $type->currency $tier->t5glassblower
 	Class == "Stackable Currency"
-	BaseType == "Glassblower's Bauble" "Orb of Alchemy" "Vaal Orb" "Armourer's Scrap" "Chance Shard"  "Artificer's Orb" "Regal Orb"
-	SetFontSize 40
+	BaseType == "Glassblower's Bauble" "Orb of Alchemy" "Vaal Orb" "Armourer's Scrap" "Chance Shard" "Regal Orb"
+	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
 	SetBackgroundColor 213 159 0 255
@@ -1923,7 +1923,7 @@ Show # %HS3 $type->currency $tier->t6artificer
 
 Hide # %HS2 $type->currency $tier->t7whetstone
 	Class == "Stackable Currency"
-	BaseType == "Lesser Jeweller's Orb" 
+	BaseType == "Lesser Jeweller's Orb" "Artificer's Orb"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2405,7 +2405,7 @@ Show # %D6 $type->currency->stackedsplintershigh $tier->10
 	SetBackgroundColor 240 90 35 255
 	PlayAlertSound 5 300
 	PlayEffect Red
-	MinimapIcon 1 Red Kite
+	MinimapIcon 0 Purple Kite
 
 Show # %DS5 $type->currency->stackedsplintershigh $tier->5
 	StackSize >= 5
@@ -2417,7 +2417,7 @@ Show # %DS5 $type->currency->stackedsplintershigh $tier->5
 	SetBackgroundColor 249 150 25 255
 	PlayAlertSound 2 300
 	PlayEffect Purple
-	MinimapIcon 1 Yellow Kite
+	MinimapIcon 1 Purple Kite
 
 Show # %DS4 $type->currency->stackedsplintershigh $tier->2
 	StackSize >= 2
@@ -2535,7 +2535,7 @@ Show # $type->uniques $tier->multispecialhigh
 	MinimapIcon 1 Blue Star
 
 # Multiple uniques sharing the same base: somewhat valuable uniques (A grade) AND cheap uniques.
-Show # $type->uniques $tier->multispecial
+Hide # $type->uniques $tier->multispecial
 	Rarity Unique
 	BaseType == "Topaz Ring" "Crimson Amulet" "Pearl Ring" "Lazuli Ring" "Amber Amulet"
 	SetFontSize 40
@@ -2622,7 +2622,7 @@ Show # %H5 $type->uniques $tier->t3boss
 	SetBackgroundColor 53 13 13 255
 
 # B Grade: Mid value uniques, ~2ex to ~9ex with average rolls
-Show # %H4 $type->uniques $tier->t3
+Hide # %H4 $type->uniques $tier->t3
 	Rarity Unique
 	BaseType == "Moulded Mitts" "Lattice Sandals" "Closed Helm" "Knight Armour" "Grand Manchettes" "Threaded Shoes" "Grand Visage" "Iron Ring" "Long Quarterstaff" "Spined Bracers" "Spired Greathelm" "Bloodstone Amulet" "Grand Cuisses" "Tattered Robe" "Chiming Staff" "Rope Cuffs" "Lace Hood" "Solid Mask" "Torment Club" "Garment" "Sigil Crest Shield" "Jewelled Gloves"
 	SetFontSize 45
@@ -2634,7 +2634,7 @@ Show # %H4 $type->uniques $tier->t3
 	PlayAlertSound 3 300
 
 # C Grade: Low value uniques, 1ex or less, but worth more with good rolls
-Show # %H4 $type->uniques $tier->t4
+Hide # %H4 $type->uniques $tier->t4
 	Rarity Unique
 	BaseType == "Feathered Robe" "Pelage Targe" "Layered Gauntlets" "Velour Shoes" "Crude Bow" "Iron Crown" "Vaal Cuirass" "Lunar Amulet" "Gold Circlet" "Covert Hood" "Gauze Wraps" "Shortbow" "Pilgrim Vestments" "Goldcast Cuffs"
 	SetFontSize 35
