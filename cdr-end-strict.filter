@@ -992,7 +992,7 @@ Show # $type->uncutgem $level->19
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 	
-Show # $type->uncutgem $level->19
+Hide # $type->uncutgem $level->19
 	BaseType == "Uncut Spirit Gem"
 	ItemLevel == 19
 	SetFontSize 45
@@ -1003,7 +1003,7 @@ Show # $type->uncutgem $level->19
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Triangle
 
-Show # $type->uncutgem $level->19
+Hide # $type->uncutgem $level->19
 	BaseType == "Uncut Skill Gem"
 	ItemLevel == 19
 	AreaLevel <= 81
