@@ -1137,20 +1137,20 @@ Show # $type->currency->soulcore $tier->restex
 #   [2811] Runes
 #------------------------------------
 
-Show # High tier runes
-	Class == "Socketable"
-	BaseType == "Iron Rune"
-	SetFontSize 40
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 213 159 0 255
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 2 White Circle
+# Show # High tier runes
+# 	Class == "Socketable"
+#	BaseType == "Iron Rune"
+#	SetFontSize 40
+#	SetTextColor 0 0 0 255
+#	SetBorderColor 0 0 0 255
+#	SetBackgroundColor 213 159 0 255
+#	PlayAlertSound 2 300
+#	PlayEffect White
+#	MinimapIcon 2 White Circle
 
 Hide # Low tier runes
 	Class == "Socketable"
-	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
+	BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune" "Iron Rune"
 	SetFontSize 40
 	SetBorderColor 0 0 0 255
 
@@ -2162,7 +2162,7 @@ Show # $type->keys $tier->restex
 
 Show # %HS3 $type->currency->catalyst $tier->t5
 	Class == "Stackable Currency"
-	BaseType == "Adaptive Catalyst" "Neural Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Reaver Catalyst"
+	BaseType == "Adaptive Catalyst" 
 	SetFontSize 45
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2171,9 +2171,9 @@ Show # %HS3 $type->currency->catalyst $tier->t5
 	PlayEffect Grey
 	MinimapIcon 2 Grey Circle
 
-Show # %HS3 $type->currency->catalyst $tier->t6
+Hide # %HS3 $type->currency->catalyst $tier->t6
 	Class == "Stackable Currency"
-	BaseType == "Chayula's Catalyst"
+	BaseType == "Chayula's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Reaver Catalyst" "Neural Catalyst" 
 	SetFontSize 40
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
