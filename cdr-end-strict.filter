@@ -101,7 +101,7 @@ Hide # hide small piles
 # These bases don't usually drop during normal gameplay and are usually only acquired form certain sources
 # Example: Breach Rings
 
-Show # %D6 $type->exoticbaseslower $tier->exoticbreachring
+Hide # %D6 $type->exoticbaseslower $tier->exoticbreachring
 	Mirrored False
 	Corrupted False
 	Rarity Normal Magic Rare
@@ -278,7 +278,7 @@ Show #T1 Jewellery
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal Magic
-	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt"
+	BaseType == "Bloodstone Amulet" "Solar Amulet" "Lunar Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Stellar Amulet" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Pearl Ring" "Rawhide Belt" "Utility Belt" "Breach Ring"
 	SetFontSize 45
 	SetBorderColor 255 125 0 160
 
@@ -371,14 +371,14 @@ Show #T1 Jewellery
 # 	BaseType == "Expert Shortbow" "Expert Cultist Bow" "Regalia Longsword" "Ultra Greatsword" "Vile Greataxe" "Expert Temple Maul" "Expert Oak Greathammer" "Expert Cultist Greathammer" "Expert Crumbling Maul" "Expert Leaden Greathammer" "Expert Crescent Quarterstaff" "Expert Long Quarterstaff" "Expert Crackling Quarterstaff" "Expert Dyad Crossbow"
 # 	SetBorderColor 255 125 0 160
 
-Show #T1 Wands
-	Mirrored False
-	Corrupted False
-	ItemLevel >= 81
-	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand"
-	SetFontSize 45
-	SetBorderColor 255 125 0 160
+# Show #T1 Wands
+# 	Mirrored False
+# 	Corrupted False
+# 	ItemLevel >= 81
+# 	Rarity Normal
+# 	BaseType == "Attuned Wand" "Siphoning Wand"
+# 	SetFontSize 45
+# 	SetBorderColor 255 125 0 160
 
 # Show # T2 Wands
 # 	Mirrored False
@@ -546,7 +546,7 @@ Show # normaldecoratorremover
 # [[1400]] Chancing Bases
 #===============================================================================================================
 
-Show # %D1 $type->chancing $tier->hh
+Hide # %D1 $type->chancing $tier->hh
 	Mirrored False
 	Corrupted False
 	Rarity Normal
@@ -675,7 +675,7 @@ Show # ILVL 83 + Quality
 	# SetBorderColor 200 200 200 255
 	# SetBackgroundColor 130 110 110 255
 	
-Show # High Quality
+Hide # High Quality
 	Mirrored False
 	Corrupted False
 	Quality >= 20
@@ -846,7 +846,7 @@ Show # t1
 	SetFontSize 45
 	SetBackgroundColor 0 80 30 255
 
-Show # t2
+Hide # t2
 	ItemLevel >= 65
 	Rarity Rare
 	Class == "Amulets" "Rings" "Belts" "Charms"
@@ -854,7 +854,7 @@ Show # t2
 	SetFontSize 40
 	SetBackgroundColor 0 40 10 255
 
-Show # t3
+Hide # t3
 	ItemLevel >= 65
 	Rarity Rare
 	Class == "Amulets" "Rings" "Belts" "Charms"
@@ -1061,10 +1061,17 @@ Hide # uncutgem any skill spirit
 	SetFontSize 30
 	DisableDropSound True
 	
-Hide # uncutgem any support
-	BaseType == "Uncut Support Gem"
-	SetFontSize 30
-	DisableDropSound True
+# Show # uncutgem any support
+# 	BaseType == "Uncut Support Gem"
+# 	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+# 	ItemLevel >= 3
+# 	SetFontSize 45
+# 	SetTextColor 255 0 0 255
+# 	SetBorderColor 255 0 0 255
+# 	SetBackgroundColor 255 255 255 255
+# 	PlayAlertSound 6 300
+# 	PlayEffect Red
+# 	MinimapIcon 0 Red Star
 	
 #------------------------------------
 #   [2810] Soul Cores
@@ -1409,14 +1416,14 @@ Show # $type->waystones $tier->waystones_a_t15
 	MinimapIcon 1 Red Square
 
 # Show # $type->waystones $tier->waystones_a_t14
-#	WaystoneTier 14
-#	Class == "Waystones"
-#	SetFontSize 40
-#	SetTextColor 0 0 0 255
-#	SetBackgroundColor 235 235 235 255
-#	PlayEffect Yellow
-#	PlayAlertSound 4 300
-#	MinimapIcon 2 Red Square
+# 	WaystoneTier 14
+# 	Class == "Waystones"
+# 	SetFontSize 40
+# 	SetTextColor 0 0 0 255
+# 	SetBackgroundColor 235 235 235 255
+# 	PlayEffect Yellow
+# 	PlayAlertSound 4 300
+# 	MinimapIcon 2 Red Square
 
 # Show # %H5 $type->waystones $tier->waystones_b_t13
 # 	WaystoneTier 13
@@ -1913,7 +1920,7 @@ Show # %HS4 $type->currency $tier->t5glassblower
 
 Show # %HS3 $type->currency $tier->t6artificer
 	Class == "Stackable Currency"
-	BaseType == "Black Scythe Artifact" "Sun Artifact" "Arcanist's Etcher" "Broken Circle Artifact" "Blacksmith's Whetstone" "Order Artifact"
+	BaseType == "Black Scythe Artifact" "Sun Artifact" "Broken Circle Artifact" "Order Artifact"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -1923,7 +1930,7 @@ Show # %HS3 $type->currency $tier->t6artificer
 
 Hide # %HS2 $type->currency $tier->t7whetstone
 	Class == "Stackable Currency"
-	BaseType == "Lesser Jeweller's Orb" "Artificer's Orb"
+	BaseType == "Lesser Jeweller's Orb" "Artificer's Orb" "Arcanist's Etcher" "Blacksmith's Whetstone"
 	SetFontSize 35
 	SetTextColor 0 0 0 255
 	SetBorderColor 0 0 0 255
@@ -2535,7 +2542,7 @@ Show # $type->uniques $tier->multispecialhigh
 	MinimapIcon 1 Blue Star
 
 # Multiple uniques sharing the same base: somewhat valuable uniques (A grade) AND cheap uniques.
-Hide # $type->uniques $tier->multispecial
+Show # $type->uniques $tier->multispecial
 	Rarity Unique
 	BaseType == "Topaz Ring" "Crimson Amulet" "Pearl Ring" "Lazuli Ring" "Amber Amulet"
 	SetFontSize 40
@@ -2613,13 +2620,14 @@ Show # %D5 $type->uniques $tier->noenchantnosocketuniques
 #------------------------------------
 
 # An expensive unique version of this item drops ONLY from bosses! The global drop unique is low value! You can hide this tier, BUT remember to check the hidden items dropped by bosses if you're doing bosses!
-Show # %H5 $type->uniques $tier->t3boss
+Hide # %H5 $type->uniques $tier->t3boss
 	Rarity Unique
 	BaseType == "Silk Robe" "Omen Crest Shield" "Chain Tiara" "Linen Wraps" "Shrine Sceptre" "Explorer Armour"
 	SetFontSize 45
 	SetTextColor 175 96 37 255
 	SetBorderColor 175 96 37 255
 	SetBackgroundColor 53 13 13 255
+	MinimapIcon 2 Red Star
 
 # B Grade: Mid value uniques, ~2ex to ~9ex with average rolls
 Hide # %H4 $type->uniques $tier->t3
@@ -2632,6 +2640,7 @@ Hide # %H4 $type->uniques $tier->t3
 	PlayEffect Brown
 	MinimapIcon 2 Brown Star
 	PlayAlertSound 3 300
+	MinimapIcon 2 Red Star
 
 # C Grade: Low value uniques, 1ex or less, but worth more with good rolls
 Hide # %H4 $type->uniques $tier->t4
@@ -2641,6 +2650,7 @@ Hide # %H4 $type->uniques $tier->t4
 	SetTextColor 175 96 37 255
 	SetBorderColor 175 96 37 255
 	SetBackgroundColor 53 13 13 255
+	MinimapIcon 2 Red Star
 
 #------------------------------------
 #   [4207] D Grade (Tier 4) uniques
@@ -2655,6 +2665,7 @@ Hide # %H3 $type->uniques $tier->hideable2
 	SetBorderColor 175 96 37 255
 	SetBackgroundColor 20 20 0 255
 	DisableDropSound True
+	MinimapIcon 2 Red Star
 
 # D Grade Low: Worthless uniques, low drop rarity tier, very safe to hide
 Hide # %H3 $type->uniques $tier->hideable
@@ -2665,6 +2676,7 @@ Hide # %H3 $type->uniques $tier->hideable
 	SetBorderColor 175 96 37 255
 	SetBackgroundColor 20 20 0 255
 	DisableDropSound True
+	MinimapIcon 2 Red Star
 	
 Show # $type->uniques $tier->restex
 	Rarity Unique
