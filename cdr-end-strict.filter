@@ -1057,7 +1057,7 @@ Hide # $type->uncutgem $level->19
 # 	MinimapIcon 1 White Triangle
 
 Hide # uncutgem any skill spirit
-	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+	BaseType == "Uncut Skill Gem" "Uncut Spirit Gem" "Uncut Support Gem"
 	SetFontSize 30
 	DisableDropSound True
 	
