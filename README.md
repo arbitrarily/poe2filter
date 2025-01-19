@@ -1,3 +1,8 @@
+
+![image](https://github.com/user-attachments/assets/1db99e8f-f0ea-44fd-8332-8cce0f2b8dfa)
+
+----
+
 # cdr's Path of Exile 2 filters
 
 https://ko-fi.com/cdrkf => My ko-fi, like patreon
