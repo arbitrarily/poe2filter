@@ -220,7 +220,7 @@ Show # raredecoratorjwlry
 	SetBackgroundColor 0 80 30 255
 	Continue
 
-Show # normaldecoratorjwlry
+Hide # normaldecoratorjwlry
 	Mirrored False
 	Corrupted False
 	ItemLevel >= 65
@@ -230,7 +230,7 @@ Show # normaldecoratorjwlry
 	SetBackgroundColor 20 20 0 180
 	Continue
 
-Show # normaldecorator
+Hide # normaldecorator
 	Mirrored False
 	Corrupted False
 	ItemLevel >= 65
@@ -2167,7 +2167,7 @@ Show # $type->keys $tier->restex
 # 	PlayEffect White
 # 	MinimapIcon 2 White Circle
 
-Show # %HS3 $type->currency->catalyst $tier->t5
+Hide # %HS3 $type->currency->catalyst $tier->t5
 	Class == "Stackable Currency"
 	BaseType == "Adaptive Catalyst" 
 	SetFontSize 45
